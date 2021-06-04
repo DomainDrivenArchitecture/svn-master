@@ -1,0 +1,6 @@
+[submodule "svn-sub1"]
+	path = svn-sub1
+	url = git@github.com:DomainDrivenArchitecture/svn-sub1.git
+[submodule "svn-sub2"]
+	path = svn-sub2
+	url = git@github.com:DomainDrivenArchitecture/svn-sub2.git
