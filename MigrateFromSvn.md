@@ -26,7 +26,7 @@ funktioniert sehr ähnlich zu den Schritten oben, aber ein bisschen automatische
 Dann mit Anleitung auf https://docs.gitlab.com/ee/user/project/import/svn.html#cut-over-migration-with-svn2git
 
 
-## Known Problems
+## Bekannte Probleme
 
 ## Referenzen
 
