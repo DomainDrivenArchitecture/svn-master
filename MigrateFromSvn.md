@@ -27,6 +27,7 @@ Dann mit Anleitung auf https://docs.gitlab.com/ee/user/project/import/svn.html#c
 
 
 ## Bekannte Probleme
+* https://dalzhim.github.io/2017/05/13/svn-to-git-transition-problems/
 
 ## Referenzen
 

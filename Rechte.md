@@ -15,7 +15,7 @@ In unserem Bsp. sind das
 
 ### UseCase1: Alle Repos clonen
 
-### UseCase2: In einem Modul etwas ändern
+### UseCase2: Ein Mitarbeiter A hat nur ein Submodul im Zugriff ändert etwas und Admin B hat alles im Zugriff und aktualisert Master so, dass ein clone "latest" möglich ist.
 
 ### UseCase3: Tag über alle Module im neuesten Stand
 
