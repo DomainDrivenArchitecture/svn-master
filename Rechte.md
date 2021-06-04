@@ -14,11 +14,19 @@ In unserem Bsp. sind das
 * https://github.com/DomainDrivenArchitecture/svn-sub2
 
 ### UseCase1: Alle Repos clonen
+* Clone und Update `git clone --recurse-submodules --remote-submodules`
+* Nur Clone `git clone --recurse-submodules`
 
 ### UseCase2: Ein Mitarbeiter A hat nur ein Submodul im Zugriff ändert etwas und Admin B hat alles im Zugriff und aktualisert Master so, dass ein clone "latest" möglich ist.
-
+* A pusht Änderungen in das Submodul
+* B ruft im Master-Module `git submodule update` auf
+Erweiterungen für verschiedene Probleme:
+* `--recursive`, falls die Submodule eigene Submodule haben
+* `--init`, falls es neue Submodule gibt
+* mit abschließendem Name, um nur ein bestimmtes Submodul zu aktualisieren
 ### UseCase3: Tag über alle Module im neuesten Stand
-
+* Tagge alle Submodule `git submodule foreach git tag -m "tagName" tagName`
+* Main-Modul `git tag -m "tagName" tagName`
 
 ## Möglichkeit: Rechte auf SVN-Plattform-Ebene
 * Einschränkung von Push / Trigger v. CI

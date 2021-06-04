@@ -36,4 +36,5 @@ Dann mit Anleitung auf https://docs.gitlab.com/ee/user/project/import/svn.html#c
   * https://blog.axosoft.com/migrating-git-svn/
   * https://sysadmin.compxtreme.ro/migrate-from-svn-to-git-step-by-step-tutorial/
   * https://john.albin.net/git/convert-subversion-to-git
+  * https://git-scm.com/book/de/v2/Git-Tools-Submodule
 
