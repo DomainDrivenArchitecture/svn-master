@@ -29,6 +29,12 @@ Dann mit Anleitung auf https://docs.gitlab.com/ee/user/project/import/svn.html#c
 ## Bekannte Probleme
 * https://dalzhim.github.io/2017/05/13/svn-to-git-transition-problems/
 
+* Größe des Repository
+   - Git braucht viel Speicher, wenn es große Dateien gibt, die sich oft verändern und wird größer, je mehr Nutzer es gibt. Es gibt aber tools, die dieses Problem lösen (git-lfs)
+* Merge History ist nicht richtig, wenn sich der Trunk verschiebt
+   - Lösbar https://stackoverflow.com/questions/12938189/how-do-i-keep-svn-history-in-git-when-trunk-has-moved
+
+
 ## Referenzen
 
 * Azure-Devops: https://docs.microsoft.com/de-de/azure/devops/repos/git/perform-migration-from-svn-to-git?view=azure-devops
