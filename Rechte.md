@@ -19,11 +19,13 @@ In unserem Bsp. sind das
 
 ### UseCase2: Ein Mitarbeiter A hat nur ein Submodul im Zugriff ändert etwas und Admin B hat alles im Zugriff und aktualisert Master so, dass ein clone "latest" möglich ist.
 * A pusht Änderungen in das Submodul
-* B ruft im Master-Module `git submodule update` auf
+* B ruft im Master-Module `git submodule update` auf um alle Submodule zu aktualisieren
+
 Erweiterungen für verschiedene Probleme:
+* mit abschließendem Name, um nur ein bestimmtes Submodul zu aktualisieren
 * `--recursive`, falls die Submodule eigene Submodule haben
 * `--init`, falls es neue Submodule gibt
-* mit abschließendem Name, um nur ein bestimmtes Submodul zu aktualisieren
+
 ### UseCase3: Tag über alle Module im neuesten Stand
 * Tagge alle Submodule `git submodule foreach git tag -m "tagName" tagName`
 * Main-Modul `git tag -m "tagName" tagName`

@@ -1,5 +1,25 @@
 # Migration von SVN
-## Schritte im Einzelnen
+### Automatisierte Alternativen
+Vielleicht bietet sich auch alternativ svn2git als Tool an
+https://github.com/svn-all-fast-export/svn2git
+
+Dann mit Anleitung von https://techbase.kde.org/Projects/MoveToGit/UsingSvn2Git
+und Tipps von https://smartbear.com/blog/migrating-from-subversion-to-git-lessons-learned/
+
+Vorteile:
+* deutlich schneller als git-svn
+* kommt mit nicht-standard konfigurationen klar
+Nachteile:
+* nicht von git, evlt. Probleme mit aktuellen git Versionen
+* man muss eigene, auf das Repository angepasste Regel Dateien schreiben (vlt. auch Vorteil?)
+* relativ viel Doku zum einlesen
+
+## Manuelle Migration (git-svn)
+Vorteile:
+* "aktueller", weil von git selbst
+Nachteile:
+* funktioniert schlechter bei nicht-standard Layout SVN Repositories
+* SEHR langsam bei großer Migration (ca. 4 Tage bei 15.000 Revisions)
 
 1. Commit Username -> First and Last Name + Email
    `svn log -q | awk -F '|' '/^r/ {sub("^ ", "", $2); sub(" $", "", $2); print $2" = "$2" <"$2">"}' | sort -u > authors-transform.txt`
@@ -19,14 +39,10 @@
     `git push origin --all`
     `git push origin --tags`
 
-### Automatisierte Alternativen
-Vielleicht bietet sich auch alternativ svn2git als Tool an um die Schritte von `git svn clone ...` bis `for b ...` zu automatisieren
-https://github.com/nirvdrum/svn2git
-funktioniert sehr ähnlich zu den Schritten oben, aber ein bisschen automatischer
-Dann mit Anleitung auf https://docs.gitlab.com/ee/user/project/import/svn.html#cut-over-migration-with-svn2git
-
-
 ## Bekannte Probleme
+* https://smartbear.com/blog/migrating-from-subversion-to-git-lessons-learned/
+* Tool von Git zur Migration ist sehr langsam bei großen Repositories
+
 * https://dalzhim.github.io/2017/05/13/svn-to-git-transition-problems/
 
 * Größe des Repository

@@ -4,7 +4,9 @@ Git kennt Hooks auf mehreren Ebenen:
 
 ## Hook auf git-client Ebene
 
-* https://githooks.com/
+https://githooks.com/
+Git Hooks sind ausführbare Bash-Skripte in .git/hooks und werden bei verschiedenen Git Aktionen automatisch ausgeführt.
+
 
 Ebene Entwickler: vor einem commit kann z.B. die Formatierung als hook integriert werden
 -> Client Commit / Push-Hooks: lint läuft bei push od. commit
