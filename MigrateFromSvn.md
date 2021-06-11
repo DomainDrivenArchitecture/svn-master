@@ -40,13 +40,9 @@ Nachteile:
     `git push origin --tags`
 
 ## Bekannte Probleme
-* https://smartbear.com/blog/migrating-from-subversion-to-git-lessons-learned/
-* Tool von Git zur Migration ist sehr langsam bei großen Repositories
-
-* https://dalzhim.github.io/2017/05/13/svn-to-git-transition-problems/
-
 * Größe des Repository
    - Git braucht viel Speicher, wenn es große Dateien gibt, die sich oft verändern und wird größer, je mehr Nutzer es gibt. Es gibt aber tools, die dieses Problem lösen (git-lfs)
+   - offizielles Migrationstool von Git ist sehr langsam bei großen Repositories (schneller mit svn2git)
 * Merge History ist nicht richtig, wenn sich der Trunk verschiebt
    - Lösbar https://stackoverflow.com/questions/12938189/how-do-i-keep-svn-history-in-git-when-trunk-has-moved
 
@@ -59,4 +55,6 @@ Nachteile:
   * https://sysadmin.compxtreme.ro/migrate-from-svn-to-git-step-by-step-tutorial/
   * https://john.albin.net/git/convert-subversion-to-git
   * https://git-scm.com/book/de/v2/Git-Tools-Submodule
+  * https://smartbear.com/blog/migrating-from-subversion-to-git-lessons-learned/
+  * https://dalzhim.github.io/2017/05/13/svn-to-git-transition-problems/
 
