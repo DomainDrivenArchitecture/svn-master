@@ -1,12 +1,12 @@
 # Rechte Management
 
-Rechte Management funktioniert in Git nicht auf Dabei-Baum Ebene sonder nur auf der Ebene des gesamten Repositories. 
+Rechte Management funktioniert in Git nicht auf Dabei-Baum Ebene sondern nur auf der Ebene des gesamten Repositories.
 
 Git Repositories befinden sich nach einem clone komplett auf dem Entwickler-Rechner, ein feiner granulares RechteMgm macht hier kein Sinn mehr!
 
 ## Mögliche Lösung: Git mit Submodules
 
-Um das Rechtemanagement abzubilden könnte wir auch mehrere verknüpfte Repositories (Git-Submodules) andenken: https://git-scm.com/book/en/v2/Git-Tools-Submodules
+Um das Rechtemanagement abzubilden könnte wir mehrere verknüpfte Repositories (Git-Submodules) andenken: https://git-scm.com/book/en/v2/Git-Tools-Submodules
 
 In unserem Bsp. sind das
 * https://github.com/DomainDrivenArchitecture/svn-master

@@ -1,20 +1,6 @@
 # Migration von SVN
-### Automatisierte Alternativen
-Vielleicht bietet sich auch alternativ svn2git als Tool an
-https://github.com/svn-all-fast-export/svn2git
-
-Dann mit Anleitung von https://techbase.kde.org/Projects/MoveToGit/UsingSvn2Git
-und Tipps von https://smartbear.com/blog/migrating-from-subversion-to-git-lessons-learned/
-
-Vorteile:
-* deutlich schneller als git-svn
-* kommt mit nicht-standard konfigurationen klar
-Nachteile:
-* nicht von git, evlt. Probleme mit aktuellen git Versionen
-* man muss eigene, auf das Repository angepasste Regel Dateien schreiben (vlt. auch Vorteil?)
-* relativ viel Doku zum einlesen
-
 ## Manuelle Migration (git-svn)
+
 Vorteile:
 * "aktueller", weil von git selbst
 Nachteile:
@@ -39,24 +25,39 @@ Nachteile:
     `git push origin --all`
     `git push origin --tags`
 
+### Automatisierte Alternativen
+
+Vielleicht bietet sich auch alternativ svn2git als Tool an
+https://github.com/svn-all-fast-export/svn2git
+
+Dann mit Anleitung von https://techbase.kde.org/Projects/MoveToGit/UsingSvn2Git
+und Tipps von https://smartbear.com/blog/migrating-from-subversion-to-git-lessons-learned/
+
+Vorteile:
+* deutlich schneller als git-svn
+* kommt mit nicht-standard konfigurationen klar
+Nachteile:
+* nicht von git, evlt. Probleme mit aktuellen git Versionen
+* man muss eigene, auf das Repository angepasste Regel Dateien schreiben (vlt. auch Vorteil?)
+* relativ viel Doku zum einlesen
+
+
 ## Bekannte Probleme
-* https://smartbear.com/blog/migrating-from-subversion-to-git-lessons-learned/
-* Tool von Git zur Migration ist sehr langsam bei großen Repositories
 
-* https://dalzhim.github.io/2017/05/13/svn-to-git-transition-problems/
-
-* Größe des Repository
-   - Git braucht viel Speicher, wenn es große Dateien gibt, die sich oft verändern und wird größer, je mehr Nutzer es gibt. Es gibt aber tools, die dieses Problem lösen (git-lfs)
-* Merge History ist nicht richtig, wenn sich der Trunk verschiebt
-   - Lösbar https://stackoverflow.com/questions/12938189/how-do-i-keep-svn-history-in-git-when-trunk-has-moved
+* Tool von Git zur Migration ist sehr langsam bei großen Repositories: ca. 4 Tage bei 15.000 Revisions
+* Größe des Repository: Git braucht viel Speicher, wenn es große Dateien gibt, die sich oft verändern und wird größer, je mehr Nutzer es gibt. Es gibt aber tools, die dieses Problem lösen (git-lfs)  
+* Merge History ist nicht richtig, wenn sich der Trunk verschiebt: Lösung siehe https://stackoverflow.com/questions/12938189/how-do-i-keep-svn-history-in-git-when-trunk-has-moved
 
 
 ## Referenzen
 
-* Azure-Devops: https://docs.microsoft.com/de-de/azure/devops/repos/git/perform-migration-from-svn-to-git?view=azure-devops
+* Azure-Devops: 
+  * https://docs.microsoft.com/de-de/azure/devops/repos/git/perform-migration-from-svn-to-git?view=azure-devops
 * Github / Linux: 
   * https://blog.axosoft.com/migrating-git-svn/
   * https://sysadmin.compxtreme.ro/migrate-from-svn-to-git-step-by-step-tutorial/
   * https://john.albin.net/git/convert-subversion-to-git
   * https://git-scm.com/book/de/v2/Git-Tools-Submodule
-
+* Migrationsprobleme
+  * https://smartbear.com/blog/migrating-from-subversion-to-git-lessons-learned/
+  * https://dalzhim.github.io/2017/05/13/svn-to-git-transition-problems/

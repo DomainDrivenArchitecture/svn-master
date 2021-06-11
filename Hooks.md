@@ -7,14 +7,13 @@ Git kennt Hooks auf mehreren Ebenen:
 https://githooks.com/
 Git Hooks sind ausführbare Bash-Skripte in .git/hooks und werden bei verschiedenen Git Aktionen automatisch ausgeführt.
 
+![Hooks1.png](Hooks1.png)
 
-Ebene Entwickler: vor einem commit kann z.B. die Formatierung als hook integriert werden
--> Client Commit / Push-Hooks: lint läuft bei push od. commit
+Bsp unter [HooksPrePush.sample](HooksPrePush.sample)
 
 
 ## Hook auf Platform Ebene
 
-Ebene Plattform:
-als Pipeline Trigger -> Build
-als sync Trigger -> Zeigen: https://github.com/DomainDrivenArchitecture/dda-backup und https://gitlab.com/domaindrivenarchitecture/dda-backup/-/settings/integrations
-Sync. Hooks auf Azure-DevOps: ?
+Plattformen schicken typischerweise Posts, die über verschiedene Events getriggert werden können (commit, push). Im Payload sind dann die entsprechenden Daten (z.B. Commitmessage, ...):
+* Github: [https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#commit_comment](https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads#commit_comment)
+* Azure-DevOps: [https://docs.microsoft.com/en-us/azure/devops/service-hooks/services/webhooks?view=azure-devops](https://docs.microsoft.com/en-us/azure/devops/service-hooks/services/webhooks?view=azure-devops)
