@@ -4,12 +4,13 @@ Git kennt Hooks auf mehreren Ebenen:
 
 ## Hook auf git-client Ebene
 
-https://githooks.com/
-Git Hooks sind ausführbare Bash-Skripte in .git/hooks und werden bei verschiedenen Git Aktionen automatisch ausgeführt.
+Git Hooks sind ausführbare Bash-Skripte in .git/hooks und werden bei verschiedenen Git Aktionen (commit, push, receive, ...) automatisch ausgeführt.
 
 ![Hooks1.png](Hooks1.png)
 
 Bsp unter [HooksPrePush.sample](HooksPrePush.sample)
+
+Siehe auch: https://githooks.com/
 
 
 ## Hook auf Platform Ebene
