@@ -14,10 +14,12 @@ In unserem Bsp. sind das
 * https://github.com/DomainDrivenArchitecture/svn-sub2
 
 ### UseCase1: Alle Repos clonen
+
 * Clone und Update `git clone --recurse-submodules --remote-submodules`
 * Nur Clone `git clone --recurse-submodules`
 
 ### UseCase2: Ein Mitarbeiter A hat nur ein Submodul im Zugriff ändert etwas und Admin B hat alles im Zugriff und aktualisert Master so, dass ein clone "latest" möglich ist.
+
 * A pusht Änderungen in das Submodul
 * B ruft im Master-Module `git submodule update` auf um alle Submodule zu aktualisieren
 
@@ -27,12 +29,14 @@ Erweiterungen für verschiedene Probleme:
 * `--init`, falls es neue Submodule gibt
 
 ### UseCase3: Tag über alle Module im neuesten Stand
+
 * Tagge alle Submodule `git submodule foreach git tag -m "tagName" tagName`
 * Main-Modul `git tag -m "tagName" tagName`
 
 ## Möglichkeit: Rechte auf SVN-Plattform-Ebene
+
 * Einschränkung von Push / Trigger v. CI
 * Rechte auf Azure-DevOps:
-  -> entweder jem / Ansgar Schwarzer
+  -> ![Authorization1.png](Authorization1.png)
 * Rechte auf GitHub 
-  -> zeigen: https://github.com/DomainDrivenArchitecture/dda-backup -> Settings
+  -> ![Authorization2.png](Authorization2.png)
