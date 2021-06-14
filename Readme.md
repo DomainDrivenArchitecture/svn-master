@@ -1,6 +1,7 @@
 #Fragen
 
 1. Migration von SVN nach Git: [MigrateFromSvn.md](MigrateFromSvn.md)
+  1. Wie werden denn die externals konkret genutzt?
 2. Mails versenden: [Hooks.md](Hooks.md)
 3. Einbinden von Repositories: s. Rechte
 4. Rechtemanagement: [Authorization.md](Authorization.md)
