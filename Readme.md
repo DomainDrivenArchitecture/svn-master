@@ -1,5 +1,6 @@
-# Fragen
+# Fragen svn-git
 
+1. Distributed Version Control: [DistributedVersionControll.md](DistributedVersionControll.md)
 1. Migration von SVN nach Git: [MigrateFromSvn.md](MigrateFromSvn.md)
    1. Wie werden denn die externals konkret genutzt?
 2. Mails versenden: [Hooks.md](Hooks.md)
