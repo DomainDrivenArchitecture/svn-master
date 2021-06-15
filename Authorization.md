@@ -40,3 +40,10 @@ Erweiterungen für verschiedene Probleme:
   -> ![Authorization1.png](Authorization1.png)
 * Rechte auf GitHub 
   -> ![Authorization2.png](Authorization2.png)
+
+## Dokumentation
+
+* Git-Submodule: 
+   * https://git-scm.com/book/en/v2/Git-Tools-Submodules
+   * https://www.w3docs.com/learn-git/git-submodule.html
+* Git-Subtree: https://www.w3docs.com/learn-git/git-subtree.html 

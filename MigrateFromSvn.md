@@ -78,6 +78,7 @@ https://tortoisesvn.net/docs/release/TortoiseSVN_en/tsvn-howto-common-projects.h
 
 ## Referenzen
 
+* git-svn: https://git-scm.com/docs/git-svn
 * Azure-Devops: 
   * https://docs.microsoft.com/de-de/azure/devops/repos/git/perform-migration-from-svn-to-git?view=azure-devops
 * Github / Linux: 
