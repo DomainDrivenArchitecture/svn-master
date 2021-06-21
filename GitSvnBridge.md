@@ -17,3 +17,11 @@ Verbindet SVN mit git und ermöglicht gleichzeitiges arbeiten mit beidem.
 * hat Tools zur Authentifizierung in SVN beim Push in git
 * nutzt außerdem Hooks zur Synchronisation
 * gute Doku
+
+Schritte:
+* Bridge User erstellen
+* Initialisiere und Starte svnserve
+* Erstelle ein Git-Repo für die Entwicklung und eins für die Bridge
+* Erstelle einen Git-Hook der Commits blockiert und einen der synchronisiert
+* Initialisiere den Auth-Manager
+* Teste Synchronisierung
