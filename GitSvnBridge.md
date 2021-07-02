@@ -1,15 +1,15 @@
-## Projekt erstellen
-* Neues Projekt mit erstellen, dabei Import auswählen
-* svn repo importieren 
+# Git-Svn Bridge
+Erlaubt Benutzern ein git repository auch mit einem svn-Client zu nutzen.
+
+## Authentifizierung
+Nutzer (die MFA nutzen) müssen zur Authentifizierung einen personal access token anlegen
+* Auf Github unter Settings -> Developer Settings -> Personal access tokens -> Generate new token -> repo auswählen -> generate Token
+* Token kopieren und speichern
+* wenn svn Authentifizierung verlangt username und personal access token verwenden
 
 ## Nutzer Setup
-* git-Benutzer clonen das Projekt über https oder ssh und können dann normal arbeiten
-* update mit `git fetch`
-
 * svn-Benutzer machen einen Checkout mit der https URL auf Github
-* unter Settings -> Developer Settings -> Personal access tokens -> Generate new token -> repo auswählen -> generate Token
-* Token kopieren und speichern
-* wenn bei commits nach dem Passwort gefragt wird access token verwenden
+* checkout mit `svn co trunk`
 * update mit `svn up trunk`
 
 ## Quellen
