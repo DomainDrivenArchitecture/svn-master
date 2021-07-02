@@ -9,7 +9,7 @@ Nutzer (die MFA nutzen) müssen zur Authentifizierung einen personal access toke
 
 ## Nutzer Setup
 * svn-Benutzer machen einen Checkout mit der https URL auf Github
-* checkout mit `svn co trunk`
+* checkout mit `svn co [URL]`
 * update mit `svn up trunk`
 
 ## Quellen
