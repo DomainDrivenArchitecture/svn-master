@@ -12,7 +12,7 @@ Generate Personal Access Token (User Settings -> Personal Access Tokens -> New T
 
 ## CMake Generation
 Generates cmake cache and files
-`cmake -H. -B.`
+`cmake -B .`
 
 ## Publishing
 Publishes package defined by CMake-File to Azure Devops
